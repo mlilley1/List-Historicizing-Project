@@ -25,15 +25,23 @@ In Haas's article, "On the Relationship Between Old and New Technologies," she d
 In other words, just as physical tools transform both the environment and the person who uses the tools, psychological tools transform both our media and our minds. In this website I will explore what this means in relation to the psychological tool of lists.<br><br><br>
 
 <details>
-            <summary>What Is a List?</summary><div class="sub2"><br>If letters and words are sign systems, then a list is a container for those sign systems. When you create a list, you are organizing your thoughts, like organizing objects in a drawer. When you create a list you are categorizing and sorting things. You are putting ideas into a container. A well-made list is a sign of an organized mind.
+            <summary>What Is a List?</summary><div class="sub2"><br>If letters and words are sign systems, then a list is a container for those sign systems. When you create a list, you are organizing your thoughts, like organizing objects in a drawer. When you create a list, you are categorizing and sorting. You are putting ideas into a container. A well-made list is a sign of an organized mind.
             <br><br>
-
+            There are two main types of lists:
+            <ul>
+              <li>Unordered lists, such as this one. List items in an unordered list can appear in any order.
+              <li>Ordered lists. List items in an ordered list must appear in the correct order, such as in the following ordered list of steps to plant a seed:<ol>
+                <li>Dig a hole.</li>
+                <li>Place seed in hole.</li>
+                <li>Cover seed with dirt.</li>
+                <li>Pour water.</li>
+                <li>Wait.</li>
           </div>
         </details>
 
-<details>
+<details class="sub1">
             <summary>A Brief History of Lists</summary><div class="sub2"><br>In <i>Orality and Literacy: The Technologizing of the Word</i>, Walter Ong argues that purely oral cultures did not use lists:
-            "Writing make such apparatus possible. Indeed, writing was in a sense invented largely to make something like lists: by far most of the earliest writing we know, that in the cuneiform script of the Sumerians beginning around 3500 BC, is account-keeping. (99)" As evidence of the lack of lists before the written word, Ong shows that the written lists produced by primary oral cultures are fundamentally different from more literary cultures.
+            "Writing make such apparatus possible. Indeed, writing was in a sense invented largely to make something like lists: by far most of the earliest writing we know, that in the cuneiform script of the Sumerians beginning around 3500 BC, is account-keeping. (99)" As evidence of the lack of lists before the written word, Ong shows that the written lists produced by primary oral cultures are fundamentally different from lists produced by more literary cultures.
 
 
             <blockquote>In the text of the Torah, which set down in writing thought forms still basically oral, the equivalent of geography (establishing the relationship of one place to another) is put into a formulary action narrative (Number 33:16 ff): 'Setting out from the desert of Sinai, they camped at Kibroth-hattaavah. Setting out from Kibroth-hattaavah, they camped at Hazeroth. Setting out from Hazeroth, they camped at Rithmah...'."</blockquote>
@@ -45,7 +53,7 @@ In other words, just as physical tools transform both the environment and the pe
               <li>the oral drive for redundancy (each name appears twice) to aid memory.</li>
               <li>the oral drive to narrate (the "begats" provide action).</li>
             </ul>
-            Pure lists, therefore, don't appear until writers move beyond a primary oral culture. "Primary oral cultures commonly situate their equivalent of lists in narrative. (Ong 99)" Once a culture is no longer primarily oral, pure lists appear, stripped of all narrative and memory-aiding devices.<br><br></div>
+            Pure lists, therefore, don't appear until writers move beyond a primary oral culture. "Primary oral cultures commonly situate their equivalent of lists in narrative. (Ong, p. 99)" Once a culture is no longer primarily oral, pure lists appear, stripped of all narrative and memory-aiding devices.<br><br></div>
           </details>
 
   <details>
@@ -54,7 +62,7 @@ In other words, just as physical tools transform both the environment and the pe
                 <li>Unordered lists.<br> These are defined by the &lt;ul&gt; tag. Individual items in an unordered list are defined by the &lt;li&gt; tag.</li>
                 <li>Ordered lists.<br> These are defined by the &lt;ol&gt; tag. Individual items in an ordered list are again defined by the &lt;li&gt; tag.</li>
               </ul>
-              These tags are actually older than HTML. The precursor to HTML was Standard Generalized Markup Language (SGML). These list tags actually predate SGML. About a decade before SGML was invented, there was IBM's GML (named after it's creators, Charles <b>G</b>oldfarb, Edward <b>M</b>osher, and Raymond <b>L</b>orie, the "GML" was retroactively defined to mean "Generalized Markup Language"). The list tags we use in HTML were first developed in GML. The idea behind GML was to separate content from format. A document with GML contains text. That text is marked up with tags that define what kind of text it is (such as paragraphs, headers, and lists). Different systems can read those tags and format the document correctly. Just as the oldest known writings contain lists, the earliest markup languages contain list tags. The tags looked a little different, but if you can read HTML, you can figure out what these tags mean:
+              These tags are actually older than HTML. The precursor to HTML was Standard Generalized Markup Language (SGML). These list tags actually predate SGML. About a decade before SGML was invented, there was IBM's GML (named after its creators, Charles <b>G</b>oldfarb, Edward <b>M</b>osher, and Raymond <b>L</b>orie, the "GML" was retroactively defined to mean "Generalized Markup Language"). The list tags we use in HTML were first developed in GML. The idea behind GML was to separate content from format. A document with GML contains text. That text is marked up with tags that define what kind of text it is (such as paragraphs, headers, and lists). Different systems can read those tags and format the document correctly. Just as the oldest known writings contain lists, the earliest markup languages contain list tags. The tags looked a little different, but if you can read HTML, you can figure out what these tags mean. Below is an example of GML from Charles Goldfarb's article <i>The Roots of SGML - a Personal Recollection</i>:
               <blockquote cite="https://en.wikipedia.org/wiki/IBM_Generalized_Markup_Language">
                 :h1.Chapter 1:  Introduction<br>
  :p.GML supported hierarchical containers, such as<br>
@@ -67,9 +75,9 @@ In other words, just as physical tools transform both the environment and the pe
               Separating format from content makes the writer more conscious of formatting choices; you have to make deliberate decisions about the format outside of the text itself. This process makes the writer more thoughtful about these choices.<br><br>
 
             </div></details>
-            <details>
-                        <summary>HTML List Tags</summary><div class="sub2"><br>The HMTL list tags are identical in appearance to their precursors in SGML. You have the same &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags. While they look the same, the HTML lists are more powerful in what they are able to do. The HTML lists can contain hypertext; they can link and be linked. The most important element on almost every website on the internet is basically just a linked list: the menu bar. (Historically, most menu bars were coded as unordered lists. There is ongoing debate about whether or not this is still optimal, such as <a href="https://css-tricks.com/navigation-in-lists-to-be-or-not-to-be/" target="_blank"> here.</a>) <br><br>
-                        The menu bar is really just a linked list showing the contents of a website. Just as a list can show how something is organized, the menu bar shows how the website is organized. Just as creating a list can organize one's thoughts, creating a menu bar for a website is an act of organizing that site's content.<br><br>
+            <details class="sub1">
+                        <summary>HTML List Tags</summary><div class="sub2"><br>The HTML list tags are identical in appearance to their precursors in SGML. You have the same &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags. While they look the same, the HTML lists are more powerful in what they are able to do. The HTML lists can contain hypertext; they can link and be linked. The most important element on almost every website on the internet is basically just a linked list: the menu bar. (Historically, most menu bars were coded as unordered lists. There is ongoing debate about whether or not this is still optimal, such as this article at <a href="https://css-tricks.com/navigation-in-lists-to-be-or-not-to-be/" target="_blank"> https://css-tricks.com/navigation-in-lists-to-be-or-not-to-be/.</a>) <br><br>
+                        The menu bar is really just a linked list showing the contents of a website. Just as a list can show how something is organized, the menu bar shows how the website is organized. Just as creating a list can organize one's thoughts, creating a menu bar for a website is an act of organizing that site's content. <br><br>
                         </details>
 
           </details>
@@ -81,12 +89,12 @@ In other words, just as physical tools transform both the environment and the pe
  <br><br>
                   As mobile technology becomes more ubiquitous, we will rely more and more on technology to do our remembering for us. The website <a href="http://appcrawlr.com/ios/collection/apps-to-remember-everything" target="_blank">appcrawlr.com</a> has a list of over 200 ios applications under the category "remember everything." These apps don't actually help you remember. Instead, they do the remembering for you. <br><br>
 
-                  The same appcrawlr.com website has a list of the "Top 100" list-making applications. Many of these allow you to share your lists much like you share posts in a social network. In this way, we can make lists specifically to help our forgetful friends and families remember things.<br><br>
+                  The same appcrawlr.com website has a list of the "Top 100" list-making applications. Many of these allow you to share your lists much like you share posts in a social network. In this way, we can make lists specifically to remember things not only for ourselves but for our friends and family as well.<br><br>
 </details>
-              <details>
+              <details class="sub1">
               <summary>XML and DITA</summary><div class="sub2"><br>Writing with technology is becoming increasingly modular. People reading on their computers or mobile devices don't want to read through large amounts of information. Instead, they want to quickly get to the specific piece of information they need and then move on. In addition, companies are targetting their content to a range of audiences and devices. The technological solution this is XML.<br><br>
 
-                 "XML promises capabilities to separate form from content; to use specific, customized markup to describe content; and to use a standard solution without depending on proprietary tools or formats." (p. 1, Priestley) The concept behind XML is very similar to the concept behind the original markup language, GML, with the separation of content and format. For example, in GML, "there are no sequence numbers for the ordered list items; they are generated during formatting." (P. 9, Goldfarb) In XML, the amount of specialized formatting available is unlimited, but the concept is the same. <br><br>
+                 "XML promises capabilities to separate form from content; to use specific, customized markup to describe content; and to use a standard solution without depending on proprietary tools or formats." (Priestley, p. 1) The concept behind XML is very similar to the concept behind the original markup language, GML, with the separation of content and format. For example, in GML, "there are no sequence numbers for the ordered list items; they are generated during formatting." (Goldfarb, 1990, p. 9) In XML, the amount of specialized formatting available is unlimited, but the concept is the same. <br><br>
 
                 With XML and DITA, you can specify formatting for a specific kind of list. For example, to explain a task you can have the &lt;step&gt; element. This defines the list as a set of instructions, to be formatted accordingly. If separating format and content makes writers more deliberate in their choices, then the more specialized those choices are, the more deliberate those writers have to be. All content can be analyzed and parsed for its specific audience and purpose.<br><br>
 
@@ -110,18 +118,16 @@ In other words, just as physical tools transform both the environment and the pe
 
                             </div>
             </details>
-            <details>
+            <details class="sub1">
               <summary>List of References</summary><div class="sub2">
               <ul>
-                <li>Haas, C., (1999). On the relationship between old and new technologies. <i>Computers and composition, 16</i>, pp. 209-228.</li>
-                <li>Haas, C., (1996). <i>Writing technology: studies on the materiality of literacy</i>. Mahwah, New Jersey: Lawrence Erlbaum Associates, Inc., Publishers.</li>
-                <li>Charles F. Goldfarb (1996). "The Roots of SGML - A Personal Recollection"
-                http://www.sgmlsource.com/history/roots.htm</li>
-
+                <li>Haas, C. (1999). On the relationship between old and new technologies. <i>Computers and composition, 16</i>, pp. 209-228.</li>
+                <li>Haas, C. (1996). <i>Writing technology: studies on the materiality of literacy</i>. Mahwah, New Jersey: Lawrence Erlbaum Associates, Inc., Publishers.</li>
                 <li>Goldfarb, C. F. (1990). <i>The SGML handbook</i>. New York, NY: Oxford University Press, New York.</li>
-                <li>Preistley, M., Hargis, G., &amp; Carpenter, S. (2001). DITA: An XML-based technical documentation authoring and publishing architecture. <i>Technology Review, 48</i>(3), pp. 352-367.</li>
+                <li>Goldfarb, C. F. (1996). <i>The roots of SGML - a personal recollection.</i> Retrieved from http://www.sgmlsource.com/history/roots.htm</li>
+                <li>Priestley, M., Hargis, G., &amp; Carpenter, S. (2001). DITA: An XML-based technical documentation authoring and publishing architecture. <i>Technology Review, 48</i>(3), pp. 352-367.</li>
                 <li>Ong, W. J. (1982). <i>Orality and literacy: the technologizing of the word</i>. New York, NY: Methuen &amp; Co.</li>
-                <li>(February 25, 2000).<i>The Late Show with David Letterman</i> (Television broadcast). In R. Burnett (Producer). New York, NY: Worldwide Pants Incorporated.</li>
+                <li>(February 25, 2000).<i>The late show with David Letterman</i> (Television broadcast). In R. Burnett (Producer). New York, NY: Worldwide Pants Incorporated.</li>
               </ul>
               </div>
             </details>

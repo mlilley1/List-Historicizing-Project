@@ -17,7 +17,9 @@ details {
   font-size: 36px;
 }
 details.sub1{
-  font-size: 24px;
+  display: block;
+  font-size: 36px;
+  background-color: #e3fafb;
 }
 
 div.sub2{font-size: 16px;}
@@ -36,10 +38,14 @@ td.pxpad {
 
 div {
    font-family: "Amatic+SC", sans-serif;
+   padding-left: 42px;
+   padding-right: 100px;
 }
 
 body {
   font-family: "Helvetica", sans-serif;
+  padding-left: 42px;
+  padding-right: 90px;
 }
 
 h2 {
